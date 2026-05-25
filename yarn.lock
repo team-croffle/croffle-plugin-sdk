@@ -5,12 +5,12 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@croffledev/croffle-types@file:../croffle-types::locator=%40croffledev%2Fplugin-sdk%40workspace%3A.":
+"@croffledev/croffle-types@npm:^1.1.0":
   version: 1.1.0
-  resolution: "@croffledev/croffle-types@file:../croffle-types#../croffle-types::hash=cbd5f0&locator=%40croffledev%2Fplugin-sdk%40workspace%3A."
+  resolution: "@croffledev/croffle-types@npm:1.1.0"
   dependencies:
     "@types/node": "npm:^25.5.0"
-  checksum: 10c0/71daff057af4ae5446796d9f3943f24e8839cd4354691cd5e22e20edb448fcc430a6259a85e9cb2e612c2105032f1c1932a226b9d6594602101351ae1d6f6178
+  checksum: 10c0/0899df0e00433034da368cdb15a4e210881ff94268da547f2e8d3828646a0cca0bc01e820d214f75318eb9b915de1bf3c04dc70002cbd9f49e9ed7b53e2d036a
   languageName: node
   linkType: hard
 
@@ -18,7 +18,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@croffledev/plugin-sdk@workspace:."
   dependencies:
-    "@croffledev/croffle-types": "file:../croffle-types"
+    "@croffledev/croffle-types": "npm:^1.1.0"
     "@types/adm-zip": "npm:^0.5.7"
     "@types/fs-extra": "npm:^11.0.4"
     "@types/node": "npm:^22.0.0"
