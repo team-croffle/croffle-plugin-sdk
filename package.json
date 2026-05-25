@@ -2,6 +2,7 @@
   "name": "@croffledev/plugin-sdk",
   "version": "1.0.0",
   "description": "SDK and CLI for creating Croffle plugins",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
@@ -9,8 +10,8 @@
     "croffle-plugin": "dist/cli.js"
   },
   "scripts": {
-    "build": "tsup src/cli.ts src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/cli.ts src/index.ts --format esm,cjs --watch",
+    "build": "tsup src/cli.ts src/index.ts --format esm --dts",
+    "dev": "tsup src/cli.ts src/index.ts --format esm --watch",
     "start": "node dist/cli.js"
   },
   "dependencies": {
