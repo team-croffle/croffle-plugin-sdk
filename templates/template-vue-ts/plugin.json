@@ -1,9 +1,19 @@
 {
-  "id": "com.example.myvueplugin",
-  "name": "My Vue Plugin",
+  "id": "com.example.mytestplugin",
+  "name": "My Test Plugin",
   "version": "1.0.0",
   "author": "Croffle Developer",
-  "description": "A wonderful Vue plugin for Croffle",
+  "description": "An all-in-one test plugin for Croffle",
   "main": "index.js",
-  "features": {}
+  "features": {
+    "views": [
+      {
+        "id": "test-feature-view",
+        "title": "Test Feature",
+        "subtitle": "All-in-one plugin",
+        "icon": "",
+        "url": "/plugin/test-feature-view"
+      }
+    ]
+  }
 }

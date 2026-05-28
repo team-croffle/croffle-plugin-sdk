@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const count = ref(0);
 </script>
@@ -16,6 +16,7 @@ const count = ref(0);
 .plugin-container {
   padding: 20px;
   font-family: sans-serif;
+  border-radius: 8px;
 }
 button {
   padding: 8px 16px;
@@ -26,6 +27,6 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #33a06f;
+  opacity: 0.9;
 }
 </style>

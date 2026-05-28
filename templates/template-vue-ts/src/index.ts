@@ -1,22 +1,51 @@
-import { createApp } from 'vue';
-import type { PluginContext } from '@croffledev/croffle-types';
-import App from './App.vue';
+import { PluginContext } from "@croffledev/plugin-sdk";
+import { createApp } from "vue";
+import FeatureView from "./MyFeatureView.vue";
+import MySettingsTab from "./MySettingsTab.vue";
 
-export async function activated(context: PluginContext) {
-  console.log('Vue Plugin has been activated!');
+let viewAppInstance: any = null;
+let settingsAppInstance: any = null;
 
-  // Register a custom settings tab
-  context.ui.registerSettingsTab('vue-tab', {
-    label: 'Vue Plugin Settings',
-    render: (container) => {
-      // Mount the Vue application into the provided container
-      const app = createApp(App);
-      app.mount(container);
-    }
+export function activated(context: PluginContext) {
+  console.log("Test Plugin has been activated!");
+
+  // 1. Register Feature View
+  context.ui.registerView("test-feature-view", (container: HTMLElement) => {
+    viewAppInstance = createApp(FeatureView);
+    viewAppInstance.mount(container);
   });
 
-  // Example: Listen to application events
-  context.app.event.on(context.enums.AppEventType.SCHEDULE_CREATE, (payload) => {
-    console.log('A new schedule was created:', payload);
+  // 2. Register Settings Tab
+  context.ui.registerSettingsTab("test-settings-tab", {
+    label: "Test Tab",
+    render: (container: HTMLElement) => {
+      settingsAppInstance = createApp(MySettingsTab);
+      settingsAppInstance.mount(container);
+    },
   });
+
+  // 3. Register Context Menu
+  context.ui.registerContextMenu(
+    "calendar",
+    "test-context-hello",
+    "Hello from Test Plugin",
+    (element: string) => {
+      console.log("Context menu clicked!", element);
+      alert("Hello from Test Plugin!");
+    },
+  );
+}
+
+export function deactivated() {
+  console.log("Test Plugin has been deactivated!");
+
+  if (viewAppInstance) {
+    viewAppInstance.unmount();
+    viewAppInstance = null;
+  }
+
+  if (settingsAppInstance) {
+    settingsAppInstance.unmount();
+    settingsAppInstance = null;
+  }
 }
