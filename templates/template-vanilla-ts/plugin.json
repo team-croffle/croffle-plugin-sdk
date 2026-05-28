@@ -1,0 +1,9 @@
+{
+  "id": "com.example.myplugin",
+  "name": "My Plugin",
+  "version": "1.0.0",
+  "author": "Croffle Developer",
+  "description": "A wonderful plugin for Croffle",
+  "main": "index.js",
+  "features": {}
+}
