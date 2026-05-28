@@ -5,20 +5,11 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@croffledev/croffle-types@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@croffledev/croffle-types@npm:1.1.0"
-  dependencies:
-    "@types/node": "npm:^25.5.0"
-  checksum: 10c0/0899df0e00433034da368cdb15a4e210881ff94268da547f2e8d3828646a0cca0bc01e820d214f75318eb9b915de1bf3c04dc70002cbd9f49e9ed7b53e2d036a
-  languageName: node
-  linkType: hard
-
-"@croffledev/plugin-sdk@workspace:.":
+"@croffledev/croffle-sdk@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@croffledev/plugin-sdk@workspace:."
+  resolution: "@croffledev/croffle-sdk@workspace:."
   dependencies:
-    "@croffledev/croffle-types": "npm:^1.1.0"
+    "@croffledev/croffle-types": "npm:^1.1.2"
     "@types/adm-zip": "npm:^0.5.7"
     "@types/fs-extra": "npm:^11.0.4"
     "@types/node": "npm:^22.0.0"
@@ -35,6 +26,15 @@ __metadata:
     croffle-plugin: dist/cli.js
   languageName: unknown
   linkType: soft
+
+"@croffledev/croffle-types@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@croffledev/croffle-types@npm:1.1.2"
+  dependencies:
+    "@types/node": "npm:^25.5.0"
+  checksum: 10c0/0db56a616610eafbca00ee175953db7b35e058f35de5635b4dacfee091927f94a4a8328af6c1c176a8acc2d9953410b0ad060763b1c7718a8cbb705bff4b2f26
+  languageName: node
+  linkType: hard
 
 "@esbuild/aix-ppc64@npm:0.27.7":
   version: 0.27.7
