@@ -1,9 +1,19 @@
 {
-  "id": "com.example.myplugin",
-  "name": "My Plugin",
+  "id": "com.example.myvanillaplugin",
+  "name": "My Vanilla Plugin",
   "version": "1.0.0",
   "author": "Croffle Developer",
-  "description": "A wonderful plugin for Croffle",
+  "description": "Vanilla JS test plugin for Croffle",
   "main": "index.js",
-  "features": {}
+  "features": {
+    "views": [
+      {
+        "id": "vanilla-feature-view",
+        "title": "Vanilla Feature",
+        "subtitle": "No Frameworks",
+        "icon": "",
+        "url": "/plugin/vanilla-feature-view"
+      }
+    ]
+  }
 }
