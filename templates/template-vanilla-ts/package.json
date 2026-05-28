@@ -9,8 +9,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@croffledev/croffle-types": "file:../croffle-types",
-    "@croffledev/plugin-sdk": "file:../croffle-plugin-sdk",
+    "@croffledev/croffle-types": "latest",
+    "@croffledev/plugin-sdk": "latest",
     "typescript": "^5.0.0",
     "vite": "^5.0.0"
   }

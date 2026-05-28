@@ -13,8 +13,8 @@
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
-    "@croffledev/croffle-types": "file:../croffle-types",
-    "@croffledev/plugin-sdk": "file:../croffle-plugin-sdk",
+    "@croffledev/croffle-types": "latest",
+    "@croffledev/plugin-sdk": "latest",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^4.0.0",
