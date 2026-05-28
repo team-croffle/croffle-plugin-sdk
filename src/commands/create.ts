@@ -71,6 +71,7 @@ export const createCommand = new Command("create")
           choices: [
             { title: "Vanilla TypeScript", value: "template-vanilla-ts" },
             { title: "Vue 3 + TypeScript", value: "template-vue-ts" },
+            { title: "React + TypeScript", value: "template-react-ts" },
           ],
         },
       ]);
