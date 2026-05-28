@@ -1,0 +1,9 @@
+{
+  "id": "com.example.myvueplugin",
+  "name": "My Vue Plugin",
+  "version": "1.0.0",
+  "author": "Croffle Developer",
+  "description": "A wonderful Vue plugin for Croffle",
+  "main": "index.js",
+  "features": {}
+}
